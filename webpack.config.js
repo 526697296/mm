@@ -7,10 +7,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 
 //获取html-webpack-plugin参数的方法
-var getHtmlConfig = function(name){
+var getHtmlConfig = function(name, title){
   return {
     template: './src/view/'+name+'.html',
     filename: 'view/'+name+'.html',
+    title: title,
     inject: true,
     hash: true,
     chunks: ['common',name]
@@ -21,7 +22,8 @@ var getHtmlConfig = function(name){
 var config = {
   entry: {
     'common': ['./src/page/common/index.js'],
-    'index': ['./src/page/index/index.js']
+    'index': ['./src/page/index/index.js'],
+    'result': ['./src/page/result/index.js']
   },
   output: {
     //存放时的一个路径
@@ -42,6 +44,17 @@ var config = {
       { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]'}
     ]
   },
+  //路径太长，配置别名
+  resolve: {
+    alias: {
+      // __dirname表示当前的根目录
+      util: __dirname + '/src/util',
+      page: __dirname + '/src/page',
+      service: __dirname + '/src/service',
+      image: __dirname + '/src/image',
+      node_modules: __dirname + '/node_modules'
+    }
+  },
   plugins: [
     // 配置：独立通用模块到=>dist/js/base.js
     new webpack.optimize.CommonsChunkPlugin({
@@ -51,11 +64,12 @@ var config = {
     // 配置：把css单独打包到文件里：2=>放入dist/css/下
     new ExtractTextPlugin("css/[name].css"),
     //html模板的处理
-    new HtmlWebpackPlugin(getHtmlConfig('index'))
+    new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
+    new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果'))
   ]
 };
 
 if('dev' === WEBPACK_ENV){
-  config.entry.common.push('webpack-dev-server/client?http://localhost:8089/');
+  config.entry.common.push('webpack-dev-server/client?http://localhost:8080/');
 }
 module.exports = config;

@@ -1,0 +1,25 @@
+.nav{
+  background: #eee;
+  height: 30px;
+  line-height: 30px;
+}
+/* =======用户部分======= */
+.nav .user{
+  float: left;
+}
+.nav .user .link{
+  margin-right: 5px;
+}
+/* .user.login表示同一个元素拥有这两个class属性 */
+.nav .user.login{
+  display: none;
+}
+/* =======导航链接部分======= */
+.nav .nav-list{
+  float: right;
+}
+.nav .nav-list .nav-item{
+  /* float: right; */
+  display: inline-block;
+  margin-left: 5px;
+}

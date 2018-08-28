@@ -1,0 +1,28 @@
+/* ======header.html cs样式======= */
+.header .logo{
+  position: absolute;
+  display: block;
+  font-size: 36px;
+  color:#c60023;
+  left: 60px;
+  top: 34px;
+  font-weight: bold;
+}
+.header .search-con{
+  padding: 40px 0 30px 250px;
+}
+.header .search-con .search-input{
+  height: 40px;
+  line-height: 40px;
+  width: 550px;
+  border: 2px solid #e60023;
+  padding-left: 10px;
+  font-size: 15px;
+  outline: none;
+}
+.header .search-con .search-btn{
+  height: 44px;
+  width: 80px;
+  /* 小技巧:为了让btn和Input输入框贴合无缝隙 */
+  position: absolute;
+}
