@@ -7,6 +7,7 @@
   left: 60px;
   top: 34px;
   font-weight: bold;
+  text-decoration: none;
 }
 .header .search-con{
   padding: 40px 0 30px 250px;
@@ -25,4 +26,15 @@
   width: 80px;
   /* 小技巧:为了让btn和Input输入框贴合无缝隙 */
   position: absolute;
+}
+
+/* 面包屑导航样式 */
+.crumb{
+  margin-bottom: 15px;
+  height: 50px;
+  line-height: 50px;
+  background: #eee;
+  color: #888;
+  font-size: 14px;
+  border-top: 2px solid #c60023;
 }

@@ -1,0 +1,90 @@
+/* user-pass-reset.html css */
+/* ===user-login.html css=== */
+/* 最外层容器 */
+.page-wrap{
+  background: #e72955;
+  padding: 40px 0;
+}
+/* 用户登入 */
+.user-con{
+  position: relative;
+  background: #fff;
+  width: 400px;
+  margin: 0 auto;
+}
+.user-con .user-title{
+  padding: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  border-bottom: 1px solid #ddd;
+}
+.user-con .user-box{
+  padding: 20px;
+}
+.user-con .user-box .error-item{
+  position: relative;
+  padding: 4px 0 4px 40px;
+  margin-bottom: 10px;
+  color: red;
+  background: #fde9e9;
+  border: 1px solid red;
+  display: none;
+}
+/* 错误提示 */
+.user-con .user-box .error-icon{
+  position: absolute;
+  font-size: 14px;
+  left: 14px;
+  top: 50%;
+  margin-top: -6px;
+}
+.user-con .user-item{
+  position: relative;
+  margin-bottom: 20px;
+}
+.user-con .user-item-text{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.user-con .step-con{
+  display: none;
+}
+.user-con .user-item .user-label{
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  bottom: 1px;
+  width: 40px;
+  line-height: 36px;
+  background: #f3f3f3;
+  font-size: 18px;
+  color: #d3d3d3;
+  text-align: center;
+  border-right: 1px solid #bdbdbd;
+}
+.user-con .user-item .user-content{
+  padding: 10px 0 10px 50px;
+  width: 308px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 15px;
+  border: 1px solid #bdbdbd;
+  outline: none;
+}
+.user-con .btn-submit{
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  padding: 6px 0;
+}
+/* 跳转链接 */
+.user-con .link-item{
+  text-align: right;
+  margin-top: 10px;
+}
+.user-con .link-item .link{
+  color: #999;
+  margin-left: 10px;
+}

@@ -84,7 +84,7 @@ var _mm = {
   //封装一个login登入页面
   doLogin: function(){
     //跳转到login.html页面;处理完登入后，跳转到指定页面，需要encodeURIComponent编码
-    window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+    window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
   },
   //跳转到首页
   goHome: function(){

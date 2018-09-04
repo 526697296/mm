@@ -79,3 +79,20 @@ input[type='checkbox']{
   opacity: .6;
   background: url("../../image/loading.gif") no-repeat;
 }
+/* panel */
+.panel{
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.panel .panel-title{
+  padding: 10px;
+  font-size: 15px;
+  color: #666;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+  padding: 10px;
+  overflow: hidden;
+}
