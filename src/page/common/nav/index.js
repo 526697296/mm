@@ -1,5 +1,11 @@
-'use strict'
-// =======引入nav.html的css样式=======
+/*
+* @Author: Rosen
+* @Date:   2017-05-17 14:17:01
+* @Last Modified by:   Rosen
+* @Last Modified time: 2017-05-22 12:21:05
+*/
+
+'use strict';
 require('./index.css');
 var _mm     = require('util/mm.js');
 var _user   = require('service/user-service.js');

@@ -1,8 +1,12 @@
-// 通用js
+/*
+* @Author: Rosen
+* @Date:   2017-05-09 16:48:55
+* @Last Modified by:   Rosen
+* @Last Modified time: 2017-05-17 21:20:30
+*/
+
 'use strict';
-// 引入通用的css文件
+
 require('./layout.css');
-// 引入font-awesome，路径在webpack.config配置了
 require('node_modules/font-awesome/css/font-awesome.min.css');
-// 引入footer.html css样式
 require('./footer/index.css');
